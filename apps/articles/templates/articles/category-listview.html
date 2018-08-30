@@ -1,0 +1,13 @@
+{% extends 'layout/default.html' %}
+{% load cms_tags thumbnail %}
+
+{% block main %}
+
+<h1>Kategorien</h1>
+<div class="grid">
+  {% for category in object_list %}
+    {% include 'articles/item.html' with url=category.get_url name=category.name image=category.image %}
+  {% endfor %}
+</div>
+
+{% endblock main %}

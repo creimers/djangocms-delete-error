@@ -1,0 +1,26 @@
+{% extends 'layout/default.html' %}
+{% load cms_tags thumbnail %}
+
+{% block main %}
+
+<h1>{{object.name}}</h1>
+
+<a class="backlink" href="{% url 'category_list' %}">
+  &laquo; zur Übersicht
+</a>
+
+<div class="grid">
+{% for article in object.articles.all %}
+  {% include 'articles/item.html' with url=article.get_url name=article.name  image=article.image %}
+{% empty %}
+<div class="empty">
+  Noch keine Beiträge in dieser Kategorie...
+</div>
+{% endfor %}
+</div>
+
+<a class="backlink" href="{% url 'category_list' %}">
+  &laquo; zur Übersicht
+</a>
+
+{% endblock main %}

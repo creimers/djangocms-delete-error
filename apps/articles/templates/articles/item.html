@@ -1,0 +1,16 @@
+{% load thumbnail %}
+
+<div class="grid-item">
+  <a href="{{url}}" class="grid-item-inner">
+    <div class="containerrrr">
+      <div class="image-container">
+        {% if image %}
+        <img src="{% thumbnail image 300x300 crop=" True " upscale="True " subject_location=image.subject_location %}" />        
+        {% endif %}
+      </div>
+      <div class="name">
+        <h4>{{name}}</h4>
+      </div>
+    </div>
+  </a>
+</div>

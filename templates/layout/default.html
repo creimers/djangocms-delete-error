@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% load cms_tags menu_tags %} {% block content %}
+
+<div class="flex-page-container">
+
+  {% include 'partials/main-menu.html' %}
+
+  <div class="container default">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-11">
+        {% block main %}
+          {% placeholder content %}
+        {% endblock main %}
+      </div>
+    </div>
+  </div>
+
+  {% include 'partials/footer.html' %}
+
+</div>
+{% endblock %}

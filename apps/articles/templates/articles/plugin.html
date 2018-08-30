@@ -1,0 +1,10 @@
+<div class="grid">
+  {% for category in categories %}
+    {% include 'articles/item.html' with url=category.get_url name=category.name image=category.image %}
+  {% endfor %}
+</div>
+{% if show_more %}
+<div>
+  <a href="{% url 'category_list' %}">&raquo; Alle Kategorien</a>
+</div>
+{% endif %}

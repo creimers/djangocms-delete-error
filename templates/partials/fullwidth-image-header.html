@@ -1,0 +1,44 @@
+{% load sekizai_tags thumbnail %}
+
+{% addtoblock 'inline_css' %}
+<style>
+  .fullwidth-header {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    height: 50vh;
+    position: relative;
+    background: lightgrey;
+  }
+
+  .fullwidth-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+</style>
+{% endaddtoblock 'inline_css' %}
+
+<div class="fullwidth-header">
+
+  {% if image %}
+    {% thumbnail image '2000x1000' crop="True" upscale="True" subject_location=image.subject_location as large %}
+    {% thumbnail image '1200x800' crop="True" upscale="True" subject_location=image.subject_location as desktop %}
+    {% thumbnail image '1000x750' crop="True" upscale="True" subject_location=image.subject_location as tablet %}
+    {% thumbnail image '500x500' crop="True" upscale="True" subject_location=image.subject_location as mobile %}
+    {% thumbnail image '400x500' crop="True" upscale="True" subject_location=image.subject_location as small %}
+
+    <picture>
+      <source media="(min-width: 1200px)" srcset="{{large.url}}" />
+      <source media="(min-width: 992px)" srcset="{{desktop.url}}" />
+      <source media="(min-width: 768px)" srcset="{{tablet.url}}" />
+      <source media="(min-width: 576px)" srcset="{{mobile.url}}" />
+      <source media="(max-width: 575px)" srcset="{{small.url}}" />
+
+      <img src="{{desktop.url}}" alt="{{ alt }}-Bild"/>
+    </picture>
+  {% endif %}
+
+</div>

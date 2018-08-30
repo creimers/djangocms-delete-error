@@ -1,0 +1,16 @@
+{% load cms_tags menu_tags %}
+
+<nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+
+  <a href="/" class="navbar-brand">
+    Photofrenn Réimch
+  </a>
+
+  <button type="button" data-toggle="collapse" data-target="#main-nav" class="navbar-toggler">&#9776;</button>
+
+  <div id="main-nav" class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+      {% show_menu 0 100 100 100 "partials/_menu_bootstrap.html" %}
+    </ul>
+  </div>
+</nav>

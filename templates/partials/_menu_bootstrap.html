@@ -1,0 +1,10 @@
+{% load menu_tags %}
+
+{% for child in children %}
+
+<li class="nav-item {% if child.ancestor %}ancestor{% endif %}{% if child.selected %} active{% endif %}{% if child.children %} dropdown{% endif %}">
+  <a href="{{ child.get_absolute_url }}" class="nav-link">{{child.get_menu_title}}</a>
+</li>
+
+{% endfor %}
+

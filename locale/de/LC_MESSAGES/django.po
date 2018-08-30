@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-23 10:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/articles/cms_apps.py:7 apps/articles/cms_toolbars.py:14
+#: apps/articles/cms_toolbars.py:18 apps/articles/models.py:16
+msgid "Categories"
+msgstr "Kategorien"
+
+#: apps/articles/cms_toolbars.py:21
+msgid "Add Category"
+msgstr "Kategorie hinzufügen"
+
+#: apps/articles/cms_toolbars.py:30 apps/articles/cms_toolbars.py:34
+msgid "Articles"
+msgstr "Artikel"
+
+#: apps/articles/cms_toolbars.py:37
+msgid "Add Article"
+msgstr "Artikel hinzufügen"
+
+#: apps/articles/models.py:15
+msgid "Category"
+msgstr "Kategorie"
+
+#: apps/articles/models.py:25 apps/articles/models.py:49
+#, fuzzy
+#| msgid "Images"
+msgid "Image"
+msgstr "Bilder"
+
+#: apps/articles/models.py:27 apps/articles/models.py:51
+#: apps/location/models.py:63
+msgid "content"
+msgstr "Inhalt"
+
+#: apps/articles/models.py:40 apps/articles/models.py:41
+msgid "Article"
+msgstr "Artikel"
+
+#: apps/articles/models.py:65
+msgid "Number to display"
+msgstr "Angezeigte Anzahl"
+
+#: apps/audio/cms_plugins.py:11
+msgid "Audio player"
+msgstr "Audio-Player"
+
+#: apps/audio/models.py:19
+msgid "Title"
+msgstr "Titel"
+
+#: apps/audio/models.py:23
+msgid "File"
+msgstr "Datei"
+
+#: apps/audio/models.py:38
+#, python-brace-format
+msgid "Incorrect file type: {extension}."
+msgstr "Falscher Dateien-Typ: {extension}."
+
+#: apps/audio/models.py:46
+msgid "<file is missing>"
+msgstr "<Datei fehlt...>"
+
+#: apps/location/admin.py:11
+msgid "Standard info"
+msgstr "Standard-Info"
+
+#: apps/location/admin.py:13
+msgid "Images"
+msgstr "Bilder"
+
+#: apps/location/cms_apps.py:7 apps/location/models.py:18
+msgid "Locations"
+msgstr "Orte"
+
+#: apps/location/models.py:17
+msgid "Location"
+msgstr "Ort"
+
+#: apps/location/models.py:23
+msgid "Photo old"
+msgstr "Foto alt"
+
+#: apps/location/models.py:28
+msgid "Photo new"
+msgstr "Foto neu"
+
+#: apps/location/models.py:36
+msgid "Year photo old"
+msgstr "Jahr Foto alt"
+
+#: apps/location/models.py:38 apps/location/models.py:45
+msgid "Use the following format: YYYY"
+msgstr "Folgendes Format benutzen: JJJJ"
+
+#: apps/location/models.py:43
+msgid "Year photo new"
+msgstr "Jahr Foto neu"
+
+#: apps/slider/cms_plugins.py:13
+msgid "Slideshow"
+msgstr ""
+
+#: apps/slider/models.py:18
+msgid "dots"
+msgstr "Punkte"
+
+#: apps/slider/models.py:19
+msgid "fade"
+msgstr "Fotos überblenden"
+
+#: apps/slider/models.py:20
+msgid "autoplay"
+msgstr "Auto-Play"
+
+#: apps/slider/models.py:22
+msgid "slides to show"
+msgstr "Anzahl Slides"
+
+#~ msgid "Address info"
+#~ msgstr "Adress-Info"
+
+#~ msgid "Add Location"
+#~ msgstr "Ort hinzufügen"
+
+#~ msgid "Edit Location"
+#~ msgstr "Ort bearbeiten"
+
+#~ msgid "street"
+#~ msgstr "Straße"
+
+#~ msgid "postal code"
+#~ msgstr "PLZ"
+
+#~ msgid "city"
+#~ msgstr "Stadt"

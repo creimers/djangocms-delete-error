@@ -1,0 +1,114 @@
+@import 'variables';
+
+body {
+  font-size: 16px;
+  color: #525c65;
+}
+
+.flex-page-container {
+  display: flex;
+  min-height: calc(100vh - 58px);
+  flex-direction: column;
+  margin-top: 58px;
+
+  .flexer {
+    flex: 1;
+  }
+}
+
+.backlink {
+  display: block;
+  margin-bottom: 1em;
+}
+
+
+nav.bg-geocoptix-primary {
+  background-color: $primary-color;
+  box-shadow: 0 4px 8px 0 rgba(51,50,51,.5);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $secondary-color;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border: 0;
+}
+
+.container.default {
+  margin-top: 3rem;
+}
+
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plugin-wrapper {
+  margin-bottom: 5rem;
+
+  h2 {
+    margin-bottom: 3.5rem;
+    font-size: 2.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    h2 {
+      color: #525c65;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.filer_image {
+  max-width: 100%;
+
+  &.left {
+    float: left;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  &.right {
+    float: right;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.filer_image_info {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+
+  a, a:hover {
+    color: white;
+  }
+}
+
+
+img.center {
+  display: flex;
+  margin: 0 auto;
+}

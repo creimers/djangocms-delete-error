@@ -1,0 +1,12 @@
+{% extends 'layout/default.html' %}
+{% load cms_tags menu_tags sekizai_tags thumbnail %}
+
+{% block main %}
+<h1>{{object.name}}</h1>
+<a class="backlink" href="{% url 'category_detail' slug=object.category.slug %}">
+  &laquo; zur Übersicht
+</a>
+<div>
+  {% render_placeholder object.placeholder %}
+</div>
+{% endblock main %}
