@@ -10,13 +10,13 @@ To get this project up and running, run
 
 `make`
 
-from the project root.
+from the project root, followed by
 
-To start the dev server, run 
-
-`make migrate`
+`make migrate` and
 
 `make superuser`
+
+To start the dev server, run 
 
 `make runserver` --> will start the server at `localhost:8000`
 
